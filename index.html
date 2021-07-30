@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./dist/css/styles.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Advanced HTML HW2-Gulp-Scss</title>
+  </head>
+
+  <body class="page__body">
+    <div class="page-container">
+      <header class="header">
+        <div class="burger">
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+          <span class="burger__line"></span>
+        </div>
+        <nav class="header__menu">
+          <ul class="header__list">
+            <li class="header__list-item">
+              <a href="#" class="header__link">Home</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__link">About Us</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__link">Our Journal</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__link">Projects</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__link">News</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__link">Features</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__link">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <picture class="img-container">
+        <source media="(min-width:1024px)" srcset="dist/images/rails-1200.png">
+        <source media="(min-width:426px)" srcset="dist/images/rails-768.png">
+        <img src="dist/images/rails-320.png" alt="Rails" style="max-width: 100%">
+      </picture>
+
+      <main class="main">
+        <h1 class="main__title">our recent posts</h1>
+        <div class="main__grid">
+          <div class="main__grid-item">
+            <img src="dist/images/tea.png" alt="" class="main__item__img" />
+            <div class="main__item__content">
+              <h2 class="main__item__title">
+                Aenean Adipiscing Etiam Vestibulum
+              </h2>
+              <p class="main__item__subtitle">
+                Photography, Journal / 9 Comments
+              </p>
+              <p class="main__item__text">
+                Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque
+                ornare sem lacinia quam venenatis vestibulum.
+              </p>
+            </div>
+          </div>
+          <div class="main__grid-item">
+            <img
+              src="dist/images/umbrella.png"
+              alt=""
+              class="main__item__img"
+            />
+            <div class="main__item__content">
+              <h2 class="main__item__title">
+                Aenean Adipiscing Etiam Vestibulum
+              </h2>
+              <p class="main__item__subtitle">
+                Photography, Journal / 9 Comments
+              </p>
+              <p class="main__item__text">
+                Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque
+                ornare sem lacinia quam venenatis vestibulum.
+              </p>
+            </div>
+          </div>
+          <div class="main__grid-item">
+            <img src="dist/images/table.png" alt="" class="main__item__img" />
+            <div class="main__item__content">
+              <h2 class="main__item__title">
+                Aenean Adipiscing Etiam Vestibulum
+              </h2>
+              <p class="main__item__subtitle">
+                Photography, Journal / 9 Comments
+              </p>
+              <p class="main__item__text">
+                Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque
+                ornare sem lacinia quam venenatis vestibulum.
+              </p>
+            </div>
+          </div>
+          <div class="main__grid-item">
+            <img src="dist/images/flowers.png" alt="" class="main__item__img" />
+            <div class="main__item__content">
+              <h2 class="main__item__title">
+                Aenean Adipiscing Etiam Vestibulum
+              </h2>
+              <p class="main__item__subtitle">
+                Photography, Journal / 9 Comments
+              </p>
+              <p class="main__item__text">
+                Etiam porta sem malesuada euismod. Aenean leo quam. Pellentesque
+                ornare sem lacinia quam venenatis vestibulum.
+              </p>
+            </div>
+          </div>
+        </div>
+        <section class="section">
+           <div class="section__shots">
+              <div class="section__shots__titles">
+                <h2 class="section__shots__firstTitle">
+                  Latest instagram Shots
+                </h2>
+                <h3 class="section__shots__secondTitle">
+                  Go To our Instagram Page
+                </h3>
+              </div>
+              <div class="section__shots__gallery">
+                <img
+                  src="dist/images/truck.png"
+                  alt="instagramShot"
+                  class="section__shots__gallery__img"
+                />
+                <img
+                  src="dist/images/door.png"
+                  alt="instagramShot"
+                  class="section__shots__gallery__img"
+                />
+                <img
+                  src="dist/images/ropes.png"
+                  alt="instagramShot"
+                  class="section__shots__gallery__img"
+                />
+                <img
+                  src="dist/images/truck.png"
+                  alt="instagramShot"
+                  class="section__shots__gallery__img"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer class="footer">
+      <div class="footer__content">
+        <h2 class="footer__title">Get In Touch with us</h2>
+        <p class="footer__text">
+          Maecenas faucibus molli interdum. Cras mattis consectetur purus sitor
+          amet sed donec malesuada ullamcorper odio. Curabitur blandit tempus
+          porttitor vollisky inceptos mollisestor.
+        </p>
+        <div class="footer__icons">
+          <svg
+            width="192"
+            height="34"
+            viewBox="0 0 192 34"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
+            <g opacity="0.77">
+              <rect
+                x="159"
+                y="1"
+                width="32"
+                height="32"
+                rx="16"
+                fill="black"
+                fill-opacity="0.01"
+                stroke="#CC212C"
+                stroke-width="2"
+              />
+              <rect
+                x="170"
+                y="11"
+                width="10"
+                height="12"
+                fill="url(#pattern0)"
+              />
+              <rect
+                x="120"
+                y="1"
+                width="32"
+                height="32"
+                rx="16"
+                fill="black"
+                fill-opacity="0.01"
+                stroke="#D97AB0"
+                stroke-width="2"
+              />
+              <rect
+                x="130"
+                y="11"
+                width="12"
+                height="12"
+                fill="url(#pattern1)"
+              />
+              <rect
+                x="80"
+                y="1"
+                width="32"
+                height="32"
+                rx="16"
+                fill="black"
+                fill-opacity="0.01"
+                stroke="#45B0E3"
+                stroke-width="2"
+              />
+              <rect x="91" y="11" width="9" height="12" fill="url(#pattern2)" />
+              <rect
+                x="41"
+                y="1"
+                width="32"
+                height="32"
+                rx="16"
+                fill="black"
+                fill-opacity="0.01"
+                stroke="#39599F"
+                stroke-width="2"
+              />
+              <rect x="54" y="11" width="6" height="12" fill="url(#pattern3)" />
+              <rect
+                x="1"
+                y="1"
+                width="32"
+                height="32"
+                rx="16"
+                fill="black"
+                fill-opacity="0.01"
+                stroke="#F8902E"
+                stroke-width="2"
+              />
+              <rect
+                x="12"
+                y="12"
+                width="10"
+                height="10"
+                fill="url(#pattern4)"
+              />
+            </g>
+            <defs>
+              <pattern
+                id="pattern0"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use xlink:href="#image0" transform="scale(0.1 0.0833333)" />
+              </pattern>
+              <pattern
+                id="pattern1"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use xlink:href="#image1" transform="scale(0.0833333)" />
+              </pattern>
+              <pattern
+                id="pattern2"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image2"
+                  transform="scale(0.111111 0.0833333)"
+                />
+              </pattern>
+              <pattern
+                id="pattern3"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use
+                  xlink:href="#image3"
+                  transform="scale(0.166667 0.0833333)"
+                />
+              </pattern>
+              <pattern
+                id="pattern4"
+                patternContentUnits="objectBoundingBox"
+                width="1"
+                height="1"
+              >
+                <use xlink:href="#image4" transform="scale(0.1)" />
+              </pattern>
+              <image
+                id="image0"
+                width="10"
+                height="12"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAMCAYAAABbayygAAAAt0lEQVQYlW2QXQ3CQBCEvzYIQAJ9JwEJOIA6AAlVQKoAHAAOigIQQEIdFAecA8gks8mRMk+7Nz97u8WjmgNMgT2wdR3ogBboJyZuwBI4A1eL1jZugLoEThbtgIvru/vGpoNGf0zUwNuEBEfX4ind9E4i638gYfI/XiZSJgxzklBjZsDKjzJILOgSQiehNi2ARZbyBAZPkqmJPwqRqLuJVLIWqtTHwWM7kSJGyBMF3fEvcmGMGgP4AiQeKmbjHB1AAAAAAElFTkSuQmCC"
+              />
+              <image
+                id="image1"
+                width="12"
+                height="12"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAA6UlEQVQokU2S0bEBURBED7UBbAhCIAJksDIgA379KBGQARmQASLgfb6/DUEI6tC36k7V1O7O9nT33LmD/+2VxAjYAR3QpvYGBOyB3kKTH2PgVgEF/QFTYBmSOfAahvkWoMU7MAOO+T6GSMyoiY22Aiv9TF2yriLZNZHro7AMyFhnhkUsqtA1YW8rW30YC/M4abTDvHgKg+SmAtjk4KaWsEFZC8YBuERllZoEZb63Dfqz+xTfBXAOmSr+N68uziE9FeeQRXAJ1bRX9jNxaOUFObQsPh/V9k2VxPRl0y+7q6vxHTBArf2uBvAB+tI7+oYeiyMAAAAASUVORK5CYII="
+              />
+              <image
+                id="image2"
+                width="9"
+                height="12"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAkAAAAMCAYAAACwXJejAAAAdklEQVQYlY2RUQ2AMAwFD4IApAwF8IMOsICj4QAH4IBaIBhAAikZyVK2hPtZutzat63ol3MHHCBAQ4IyCITV5aSYOiVVph6ALqovwFtpTDRq7bgktpMHDrtnpRnY/gSP0eCij7maG1lEg0/hRA6n0vsdnywPIDd20xTROZ0meQAAAABJRU5ErkJggg=="
+              />
+              <image
+                id="image3"
+                width="6"
+                height="12"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAMCAYAAABBV8wuAAAAUklEQVQYlWO0jJzPwMDAYMDAwLCegYFBgQEKmKB0PbIgCLBAaQEksUQGBoYHIB0OaBIPYDr2IxsB48PswAAgCUYGBoYDSDIgPiNeHTSVYGBgAADjAwetkEKPggAAAABJRU5ErkJggg=="
+              />
+              <image
+                id="image4"
+                width="10"
+                height="10"
+                xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAqUlEQVQYlW2QUQ3CQBAFp6QCkFAMkEoABQQJOAAJKKA4wAFBAaAAHIAM/iDT3jb7wSaX6929nX2v1aebfxnqCdyAI/Aud2NN0ncLbIEXcPgnrIAlsEskGx7ANAuvwKqMngH7NMG3UbgoBC9dJ2CTxL0NhRIMYdnkSM9BFtKYOuiKzsWXQn0brAE6iaLDyzo1ufxV/bku6Cgp0hQZ8BJeJZrWiv2eggzegR+KQySg1Lx70wAAAABJRU5ErkJggg=="
+              />
+            </defs>
+          </svg>
+        </div>
+        <p class="footer__text__low">
+          Moonshine St. 14-05 Light City / T. +00 (123) 456 78 90 /
+          first.last@email.com
+        </p>
+      </div>
+    </footer> -->
+    <script src="dist/js/scripts.min.js"></script>
+  </body>
+</html>

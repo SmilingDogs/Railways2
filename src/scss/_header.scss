@@ -1,0 +1,111 @@
+@import "./_variables.scss";
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 25px 0;
+
+  &__list {
+    display: flex;
+  }
+  &__list-item:not(:first-child) {
+    margin-left: 45px;
+  }
+  &__list-item a {
+    color: $linkColor;
+  }
+  &__list-item:hover a {
+    color: $linkColor--hover;
+  }
+}
+
+.burger {
+  display: none;
+  background-color: #000;
+  position: relative;
+  width: 40px;
+  height: 33px;
+  z-index: 3;
+
+  &__line:nth-child(1) {
+    position: absolute;
+    background-color: #fff;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    top: 5px;
+    transition: all 0.5s ease;
+
+    &.active:nth-child(1) {
+      transform: rotate(45deg);
+      top: 15px;
+    }
+  }
+  &__line:nth-child(2) {
+    position: absolute;
+    background-color: #fff;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    top: 15px;
+    transition: all 0.5s ease;
+
+    &.active:nth-child(2) {
+      opacity: 0;
+    }
+  }
+  &__line:nth-child(3) {
+    position: absolute;
+    background-color: #fff;
+    left: 10%;
+    width: 80%;
+    height: 3px;
+    bottom: 5px;
+    transition: all 0.5s ease;
+    &.active:nth-child(3) {
+      transform: rotate(-45deg);
+      bottom: 15px;
+    }
+  }
+}
+.img-container {
+  display: block;
+  text-align: center;
+}
+@include tablet {
+  .burger {
+    display: block;
+    position: fixed;
+    top: 15px;
+    left: 10px;
+  }
+  .header__menu {
+    position: fixed;
+    background-color: $textColorFooter;
+    opacity: 0;
+    width: 300px;
+    height: 500px;
+    top: 50px;
+    left: -100%;
+    transition: all 0.6s ease-in-out;
+
+    &.active {
+      opacity: 1;
+      left: 0;
+    }
+  }
+  .header__list {
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    &-item {
+      padding: 15px 25px;
+    }
+    &-item:not(:first-child) {
+      margin: 0;
+    }
+  }
+
+}

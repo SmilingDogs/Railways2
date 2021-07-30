@@ -1,0 +1,11 @@
+@mixin flx-ctr {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+@mixin grd-start {
+	display: grid;
+    justify-items: center;
+    align-items: start;
+}

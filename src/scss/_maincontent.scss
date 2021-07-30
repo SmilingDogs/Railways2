@@ -1,0 +1,102 @@
+@import "./_variables.scss";
+.page-container {
+  margin: 0 auto; /* 1 */
+  max-width: 1200px; /* 2 */
+  padding: 0 10px; /* 3 */
+}
+.main {
+  margin-top: 40px;
+  &__title {
+    text-align: center;
+    text-transform: uppercase;
+  }
+  &__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 45px;
+
+    &-item {
+      display: grid;
+      grid-template-columns: 30% 70%;
+    }
+  }
+}
+.section {
+  margin-top: 40px;
+  .section__shots__gallery > img {
+    max-width: 100%; //!! супер свой ство для адаптисности картинок: сжимаются пропопрционально ширине жкрана
+
+  }
+
+  &__shots {
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+
+    &__titles {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &__gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 10px;
+    }
+  }
+}
+
+@media (max-width: 1120px) {
+  .main__grid {
+    grid-template-columns: 1fr;
+    justify-items: right;
+  }
+  .section__shots__gallery > img {
+    max-width: 100%; 
+
+  }
+}
+@media (max-width: 610px) {
+  .main__grid {
+    justify-items: center;
+  }
+  .section__shots__gallery{
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main__title {
+    font-size: 22px;
+  }
+
+  .main__grid-item {
+    grid-template-columns: 100%;
+
+    & img {
+      width: 240px;
+      height: 210px;
+      object-fit: cover;
+    }
+  }
+  .main__item__title {
+    font-size: 1rem;
+  }
+  .main__item__subtitle,
+  .main__item__text {
+    display: none;
+  }
+  .section__shots__firstTitle, .section__shots__secondTitle {
+    font-size: 1.2rem;
+  }
+}
+@include mobile {
+  .section__shots {
+    align-items: center;
+  }
+  .section__shots__gallery{
+    grid-template-columns: 1fr;
+
+  }
+  .section__shots__firstTitle, .section__shots__secondTitle {
+    display: none;
+  }
+}

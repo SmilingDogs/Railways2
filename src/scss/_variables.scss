@@ -1,0 +1,25 @@
+$linkColor: #4E4E4E;
+$linkColor--hover: #1229f7;
+$titleColor: #4E4E4E;
+$subtitleColor: #7C7C7C;
+$textColor: #5C5C5C;
+$textColorFooter: #B9B9B9;
+
+$bp_mobile: 425px;
+@mixin mobile {
+    @media (max-width: #{$bp_mobile}){
+        @content
+    }
+}
+$bp_tablet: 768px;
+@mixin tablet {
+    @media (max-width: #{$bp_tablet}){
+        @content
+    }
+}
+$bp_laptop: 1024px;
+@mixin laptop {
+    @media (max-width: #{$bp_laptop}){
+        @content
+    }
+}
