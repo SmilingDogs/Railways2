@@ -1,19 +1,12 @@
-const burger = document.querySelector(".burger");
-const menu = document.querySelector(".header__menu");
-const lines = document.querySelectorAll(".burger__line");
+const burger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-window.addEventListener("click", dropMenu);
+burger.addEventListener("click", () => {
+  burger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+});
 
-function dropMenu(e) {
-  menu.classList.toggle("active");
-  
-
-  for (let el of lines) {
-    el.classList.toggle("active");
-  }
-
-}
-
-menu.addEventListener('click', (e)=> {
-    e.stopPropagation()
-})
+navMenu.addEventListener("click", () => {
+  navMenu.classList.toggle("active");
+  burger.classList.remove("active");
+});

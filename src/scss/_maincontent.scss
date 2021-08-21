@@ -1,4 +1,5 @@
 @import "./_variables.scss";
+
 .page-container {
   margin: 0 auto; /* 1 */
   max-width: 1200px; /* 2 */
@@ -21,10 +22,18 @@
     }
   }
 }
+.main__item__title {
+  font-size: 20px;
+  margin-bottom: 1rem;
+
+}
+.main__grid {
+  margin-top: 40px;
+}
 .section {
   margin-top: 40px;
   .section__shots__gallery > img {
-    max-width: 100%; //!! супер свой ство для адаптисности картинок: сжимаются пропопрционально ширине жкрана
+    max-width: 100%; //todo супер свойство для адаптивности картинок: сжимаются пропопрционально ширине экрана
 
   }
 
@@ -52,20 +61,21 @@
     justify-items: right;
   }
   .section__shots__gallery > img {
-    max-width: 100%; 
+    max-width: 100%;
 
   }
 }
 @media (max-width: 610px) {
   .main__grid {
     justify-items: center;
+    margin-top: 30px;
   }
   .section__shots__gallery{
     grid-template-columns: repeat(2, 1fr);
   }
 
   .main__title {
-    font-size: 22px;
+    font-size: 20px;
   }
 
   .main__grid-item {
@@ -79,6 +89,7 @@
   }
   .main__item__title {
     font-size: 1rem;
+    margin-top: 25px;
   }
   .main__item__subtitle,
   .main__item__text {
@@ -89,6 +100,12 @@
   }
 }
 @include mobile {
+  .main__title {
+    font-size: 1rem;
+  }
+  .main__grid {
+    margin-top: 20px;
+  }
   .section__shots {
     align-items: center;
   }

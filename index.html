@@ -15,44 +15,45 @@
 
   <body class="page__body">
     <div class="page-container">
-      <header class="header">
-        <div class="burger">
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-          <span class="burger__line"></span>
-        </div>
-        <nav class="header__menu">
-          <ul class="header__list">
-            <li class="header__list-item">
-              <a href="#" class="header__link">Home</a>
+      <header>
+        <nav class="navbar">
+          <a href="#" class="nav-logo">ALEX.</a>
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="#" class="nav-link">Home</a>
             </li>
-            <li class="header__list-item">
-              <a href="#" class="header__link">About Us</a>
+            <li class="nav-item">
+              <a href="#" class="nav-link">About Us</a>
             </li>
-            <li class="header__list-item">
-              <a href="#" class="header__link">Our Journal</a>
+            <li class="nav-item">
+              <a href="#" class="nav-link">News</a>
             </li>
-            <li class="header__list-item">
-              <a href="#" class="header__link">Projects</a>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Projects</a>
             </li>
-            <li class="header__list-item">
-              <a href="#" class="header__link">News</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#" class="header__link">Features</a>
-            </li>
-            <li class="header__list-item">
-              <a href="#" class="header__link">Contact</a>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Contact</a>
             </li>
           </ul>
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
         </nav>
       </header>
       <picture class="img-container">
-        <source media="(min-width:1024px)" srcset="dist/images/rails-1200.png">
-        <source media="(min-width:426px)" srcset="dist/images/rails-768.png">
-        <img src="dist/images/rails-320.png" alt="Rails" style="max-width: 100%">
+        <source
+          media="(min-width:800px)"
+          srcset="dist/images/rails-1200.png"
+        />
+        <source media="(min-width:321px)" srcset="dist/images/rails-768.png" />
+        <img
+          src="dist/images/rails-320.png"
+          alt="Rails"
+          style="max-width: 100%"
+        />
       </picture>
-
       <main class="main">
         <h1 class="main__title">You can resize the Window to check adaptive</h1>
         <div class="main__grid">
@@ -122,37 +123,32 @@
           </div>
         </div>
         <section class="section">
-           <div class="section__shots">
-              <div class="section__shots__titles">
-                <h2 class="section__shots__firstTitle">
-                  To Adaptive...
-                </h2>
-                <h3 class="section__shots__secondTitle">
-                  To Responsive...
-                </h3>
-              </div>
-              <div class="section__shots__gallery">
-                <img
-                  src="dist/images/truck.png"
-                  alt="instagramShot"
-                  class="section__shots__gallery__img"
-                />
-                <img
-                  src="dist/images/door.png"
-                  alt="instagramShot"
-                  class="section__shots__gallery__img"
-                />
-                <img
-                  src="dist/images/ropes.png"
-                  alt="instagramShot"
-                  class="section__shots__gallery__img"
-                />
-                <img
-                  src="dist/images/truck.png"
-                  alt="instagramShot"
-                  class="section__shots__gallery__img"
-                />
-              </div>
+          <div class="section__shots">
+            <div class="section__shots__titles">
+              <h2 class="section__shots__firstTitle">To Adaptive...</h2>
+              <h3 class="section__shots__secondTitle">To Responsive...</h3>
+            </div>
+            <div class="section__shots__gallery">
+              <img
+                src="dist/images/truck.png"
+                alt="instagramShot"
+                class="section__shots__gallery__img"
+              />
+              <img
+                src="dist/images/door.png"
+                alt="instagramShot"
+                class="section__shots__gallery__img"
+              />
+              <img
+                src="dist/images/ropes.png"
+                alt="instagramShot"
+                class="section__shots__gallery__img"
+              />
+              <img
+                src="dist/images/truck.png"
+                alt="instagramShot"
+                class="section__shots__gallery__img"
+              />
             </div>
           </div>
         </section>
@@ -340,7 +336,7 @@
           first.last@email.com
         </p>
       </div>
-    </footer> -->
+    </footer>
     <script src="dist/js/scripts.min.js"></script>
   </body>
 </html>

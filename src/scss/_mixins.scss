@@ -1,9 +1,13 @@
+@mixin flex-btw-ctr {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
 @mixin flx-ctr {
 	display: flex;
-	align-items: center;
 	justify-content: center;
+	align-items: center;
 }
-
 @mixin grd-start {
 	display: grid;
     justify-items: center;

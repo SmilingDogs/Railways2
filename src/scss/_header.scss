@@ -1,111 +1,73 @@
 @import "./_variables.scss";
 
-.header {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 25px 0;
-
-  &__list {
-    display: flex;
-  }
-  &__list-item:not(:first-child) {
-    margin-left: 45px;
-  }
-  &__list-item a {
-    color: $linkColor;
-  }
-  &__list-item:hover a {
-    color: $linkColor--hover;
-  }
+a {
+  color: $linkColor;
 }
 
-.burger {
+.navbar {
+  min-height: 80px;
+  @include flex-btw-ctr;
+  padding: 0 24px;
+}
+
+.nav-menu {
+  @include flex-btw-ctr;
+  gap: 60px;
+}
+.nav-logo {
+  font-size: 32px;
+}
+.nav-link {
+  font-size: 20px;
+  transition: 0.7s ease;
+}
+.nav-link:hover {
+  color: $linkColor--hover;
+}
+.hamburger {
   display: none;
-  background-color: #000;
-  position: relative;
-  width: 40px;
-  height: 33px;
-  z-index: 3;
+  cursor: pointer;
+}
+.bar {
+  display: block;
+  width: 30px;
+  height: 4px;
+  margin: 5px auto;
+  transition: all 0.4s ease-in-out;
+  -webkit-transition: all 0.4s ease-in-out;
+  background-color: $linkColor--hover;
+}
 
-  &__line:nth-child(1) {
-    position: absolute;
-    background-color: #fff;
-    left: 10%;
-    width: 80%;
-    height: 3px;
-    top: 5px;
-    transition: all 0.5s ease;
+@include tablet {
+  .hamburger {
+    display: block;
 
-    &.active:nth-child(1) {
-      transform: rotate(45deg);
-      top: 15px;
-    }
-  }
-  &__line:nth-child(2) {
-    position: absolute;
-    background-color: #fff;
-    left: 10%;
-    width: 80%;
-    height: 3px;
-    top: 15px;
-    transition: all 0.5s ease;
-
-    &.active:nth-child(2) {
+    &.active .bar:nth-child(2) {
       opacity: 0;
     }
-  }
-  &__line:nth-child(3) {
-    position: absolute;
-    background-color: #fff;
-    left: 10%;
-    width: 80%;
-    height: 3px;
-    bottom: 5px;
-    transition: all 0.5s ease;
-    &.active:nth-child(3) {
-      transform: rotate(-45deg);
-      bottom: 15px;
+    &.active .bar:nth-child(1) {
+      transform: translateY(9px) rotate(45deg);
+    }
+    &.active .bar:nth-child(3) {
+      transform: translateY(-9px) rotate(-45deg);
     }
   }
-}
-.img-container {
-  display: block;
-  text-align: center;
-}
-@include tablet {
-  .burger {
-    display: block;
+  .nav-menu {
     position: fixed;
-    top: 15px;
-    left: 10px;
-  }
-  .header__menu {
-    position: fixed;
-    background-color: $textColorFooter;
-    opacity: 0;
-    width: 300px;
-    height: 500px;
-    top: 50px;
     left: -100%;
-    transition: all 0.6s ease-in-out;
+    top: 80px;
+    gap: 0;
+    flex-direction: column;
+    background-color: $textColorFooter;
+    width: 50%;
+    text-align: center;
+    transition: all 0.4s ease;
 
     &.active {
-      opacity: 1;
       left: 0;
     }
   }
-  .header__list {
-    margin-top: 40px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    &-item {
-      padding: 15px 25px;
-    }
-    &-item:not(:first-child) {
-      margin: 0;
-    }
+  .nav-item {
+    margin: 20px 0;
   }
-
 }
